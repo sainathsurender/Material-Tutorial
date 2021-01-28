@@ -1,4 +1,12 @@
 table {
     width: 100%;
-    margin:2%;
   }
+
+button.mat-menu-trigger{
+  border: white;
+  background-color: white;
+}
+
+button.mat-menu-trigger:focus{
+  outline: white;
+}

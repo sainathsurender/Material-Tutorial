@@ -8,13 +8,5 @@ import { ModalComponent } from './shared/modal/modal.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
-  constructor(public dialog: MatDialog) {}
-
-  openDialog() {
-    const dialogRef = this.dialog.open(ModalComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
+  
 }
