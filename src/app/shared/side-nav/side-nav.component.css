@@ -1,3 +1,7 @@
 .example-container, .mat-drawer-container{
     height: 100%;
 }
+
+.flex-spacer{
+    width: 87%;
+}

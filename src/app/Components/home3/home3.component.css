@@ -1,0 +1,36 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+} 
+
+form{
+  margin:2% 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section div{
+  display: flex;
+}
+
+section div mat-form-field{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 50%;
+  padding: 0 10px 0 0;
+} 
+
+.mat-custom-form .mat-form-field-wrapper {
+  position: relative;
+  width: 100%;
+}
