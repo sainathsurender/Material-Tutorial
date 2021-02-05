@@ -9,23 +9,28 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 export class Home3Component implements OnInit {
 
   constructor() {
+    this.profileForm.name_used = "fsdf";
   }
 
   ngOnInit() {
   }
 
-  issueForm = new FormGroup({
-    name_used: new FormControl(),
-    last_name: new FormControl(),
-    first_name: new FormControl(),
-    middle_name: new FormControl(),
-    status: new FormControl(),
-    login_name: new FormControl(),
-    email: new FormControl()
- });
+  profileForm = new Profile();
 
   submitForm() {
-    console.log(this.issueForm.value);
+    console.log(this.profileForm);
   }
 
+}
+
+export class Profile {
+  constructor(
+    public name_used?: string,
+    public last_name?: string,
+    public first_name?: string,
+    public middle_name?: string,
+    public status?: string,
+    public login_name?: string,
+    public email?: string
+  ) {}
 }

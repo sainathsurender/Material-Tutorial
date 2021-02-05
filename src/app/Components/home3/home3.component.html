@@ -1,14 +1,14 @@
 <div class="form-container">
-  <form [formGroup]="issueForm" (ngSubmit)="submitForm()" novalidate>
+  <form #myForm="ngForm" (ngSubmit)="submitForm()" novalidate>
     <section layout="row" layout-sm="column" layout-align="end center" layout-wrap>
       <div layout="row" layout-align="start center" flex class="mat-custom-form">
           <mat-form-field appearance="fill">
             <mat-label>NameUsed</mat-label>
-            <input matInput formControlName="name_used" class="form-control"/>
+            <input matInput id="name_used" [(ngModel)]="profileForm.name_used" name="name_used" class="form-control"/>
           </mat-form-field>
           <mat-form-field appearance="fill">
             <mat-label>LastName</mat-label>
-            <input matInput formControlName="last_name" class="form-control" />
+            <input matInput id="last_name" [(ngModel)]="profileForm.last_name" name="last_name" class="form-control" />
           </mat-form-field>
       </div>
     </section>
@@ -17,11 +17,11 @@
       <div layout="row" layout-align="start center" flex class="mat-custom-form">
         <mat-form-field appearance="fill">
           <mat-label>FirstName</mat-label>
-          <input matInput formControlName="first_name" class="form-control" />
+          <input matInput id="first_name" [(ngModel)]="profileForm.first_name" name="first_name" class="form-control" />
         </mat-form-field>
         <mat-form-field appearance="fill">
           <mat-label>MiddleName</mat-label>
-          <input matInput formControlName="middle_name" class="form-control" />
+          <input matInput id="middle_name" [(ngModel)]="profileForm.middle_name" name="middle_name" class="form-control" />
         </mat-form-field>
       </div>
     </section>
@@ -29,7 +29,7 @@
       <div layout="row" layout-align="start center" flex class="mat-custom-form">
       <mat-form-field appearance="fill">
         <mat-label>Status</mat-label>
-        <input matInput formControlName="status" class="form-control" />
+        <input matInput id="status" [(ngModel)]="profileForm.status" name="status" class="form-control" />
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Select me</mat-label>
@@ -46,16 +46,11 @@
     <div layout="row" layout-align="start center" flex class="mat-custom-form">
       <mat-form-field appearance="fill" class="mat-form-field-15">
         <mat-label>LoginName</mat-label>
-        <input matInput formControlName="login_name" class="form-control" />
+        <input matInput id="login_name" [(ngModel)]="profileForm.login_name" name="login_name" class="form-control" />
       </mat-form-field>
       <mat-form-field appearance="fill" class="mat-form-field-75">
         <mat-label>Email</mat-label>
-        <input
-          matInput
-          formControlName="email"
-          type="email"
-          class="form-control"
-        />
+        <input matInput id="email" [(ngModel)]="profileForm.email" name="email" class="form-control" />
       </mat-form-field>
     </div>
   </section>

@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Home3RoutingModule } from './home3-routing.module';
 import { Home3Component } from './home3.component';
 
-import { MatFormFieldModule,MatInputModule,MatButtonModule, MatOptionModule, MatSelectModule } from "@angular/material";
+import { MatFormFieldModule,MatInputModule,MatButtonModule, MatOptionModule, MatSelectModule,MatCheckboxModule } from "@angular/material";
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
@@ -18,7 +18,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatInputModule,
     MatButtonModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule
   ]
 })
 export class Home3Module { }
